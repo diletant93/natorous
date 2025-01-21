@@ -1,0 +1,49 @@
+*, *::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color:#777;
+}
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,#7ed56fc4,#28b485c9), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    
+    clip-path: polygon(0 0, 100% 0, 100% 80vh , 0 100%);
+    position: relative;
+}
+.logo-box{
+    position: absolute;
+    top:2.2rem;
+    left:2.2rem;
+}
+.logo{
+    height: 35px;
+}
+.text-box{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.heading-primary{
+    color:#fff;
+    text-transform: uppercase;
+}
+.heading-primary-main{
+    display: block;
+    font-size:3.8rem;
+    letter-spacing: 2rem;
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 1.25rem;
+    letter-spacing: 1.03rem;
+}
