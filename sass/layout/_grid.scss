@@ -1,13 +1,11 @@
 .row{
     @include clearfix;
     max-width:$grid-width;
-    background: $color-primary;
     margin: 0 auto;
     &:not(:last-child){
         margin-bottom: $gap-vertical;
     }
     [class^="col-"]{
-        background: orangered;
         float:left;
         &:not(:last-child){
              margin-right: $gap-vertical;
