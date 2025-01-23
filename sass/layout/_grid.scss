@@ -1,0 +1,38 @@
+.row{
+    @include clearfix;
+    max-width:$grid-width;
+    background: $color-primary;
+    margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: $gap-vertical;
+    }
+    [class^="col-"]{
+        background: orangered;
+        float:left;
+        &:not(:last-child){
+             margin-right: $gap-vertical;
+        }
+    }
+    .col-1-of-2{
+        width:calc((100% - #{$gap-vertical}) / 2);
+    }
+    .col-1-of-3{
+        width:calc((100% - #{$gap-vertical}*2) / 2.9999999);
+    }
+    .col-2-of-3{
+        width:calc(#{$gap-vertical} +  2 * ((100% - 2 * #{$gap-vertical}) / 3));
+    }
+    .col-1-of-4{
+        width:calc((100% - #{$gap-vertical}*3) / 4);
+    }
+    .col-2-of-4{
+        width:calc(((100% - #{$gap-vertical}) / 4)*2);
+    }
+    .col-3-of-4{
+        width:calc(((100% - #{$gap-vertical}*3) / 4)* 3 + #{$gap-vertical}*2);;
+    }
+
+}
+.grid-test{
+    padding: 1rem;
+}
