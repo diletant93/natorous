@@ -136,6 +136,14 @@ body {
   margin: 0 auto;
 }
 
+.u-mt-big {
+  margin-top: 8rem;
+}
+
+.u-mt-huge {
+  margin-top: 10rem;
+}
+
 .wrapper-bg-gray {
   background-color: #f7f7f7;
 }
@@ -166,7 +174,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   padding: 2.56rem 6.912rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border-radius: 10.24rem;
   transition: all 0.3s;
   position: relative;
@@ -189,6 +197,10 @@ body {
 .btn--white {
   background: #fff;
   color: #777;
+}
+.btn--green {
+  background: #7ed56f;
+  color: #fff;
 }
 .btn::after {
   content: "";
