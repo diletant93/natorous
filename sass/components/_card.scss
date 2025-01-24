@@ -10,13 +10,24 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
-        transition: all .8s;
+        transition: all .8s ease;
+        border-radius: .4rem;
+        box-shadow: 0 1.5rem 4rem $color-black-shadow;
         &--front{
-            background-color: orangered;
+            background-color: $color-white;
         }
         &--back{
-            background-color: orange;
+    
             transform: rotateY(180deg);
+            &-1{
+                background-image: linear-gradient(to bottom right,$color-secondary-light, $color-secondary-dark);
+            }
+            &-2{
+                background-image: linear-gradient(to bottom right,$color-secondary-light, $color-secondary-dark);
+            }
+            &-3{
+                background-image: linear-gradient(to bottom right,$color-secondary-light, $color-secondary-dark);
+            }
         }
     }
     &:hover{
@@ -27,5 +38,7 @@
             transform: rotateY(0deg);
         }
     }
+
+    
 
 }

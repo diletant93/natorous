@@ -164,7 +164,7 @@ body {
 }
 .btn:hover {
   transform: translateY(-0.512rem);
-  box-shadow: 0 1.792rem 3.584rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.792rem 3.584rem rgba(0, 0, 0, 0.15);
 }
 .btn:hover::after {
   transform: scaleX(1.3) scaleY(1.5);
@@ -172,7 +172,7 @@ body {
 }
 .btn:active {
   transform: translateY(-0.2048rem);
-  box-shadow: 0 0.768rem 2.56rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.768rem 2.56rem rgba(0, 0, 0, 0.15);
 }
 .btn--white {
   background: #fff;
@@ -284,14 +284,24 @@ body {
   top: 0;
   left: 0;
   backface-visibility: hidden;
-  transition: all 0.8s;
+  transition: all 0.8s ease;
+  border-radius: 0.4rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-color: orangered;
+  background-color: #fff;
 }
 .card__side--back {
-  background-color: orange;
   transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
