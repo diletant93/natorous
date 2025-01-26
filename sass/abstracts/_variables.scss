@@ -14,9 +14,11 @@ $color-grey-light-100:#f7f7f7;
 
 $color-white: #fff;
 $color-black:#000;
+$color-black-shadow: rgba(0, 0, 0, 0.15);
+
 $color-gray-dark: #777;
 $color-gray-dark-100:#999;
-$color-black-shadow: rgba(0, 0, 0, 0.15);
+$color-gray-dark-400:#333;
 
 //gradients
 $gradient-primary-light:  linear-gradient(to right bottom, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8));

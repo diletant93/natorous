@@ -7,6 +7,7 @@
 a:link,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 ul, ol {
@@ -697,6 +698,47 @@ body {
 
 .grid-test {
   padding: 1rem;
+}
+
+.footer {
+  padding: 10rem 0;
+  background-color: #333;
+  color: #f7f7f7;
+  font-size: 1.4rem;
+}
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.footer__logo {
+  height: 15rem;
+}
+.footer__navigation {
+  border-top: 0.1rem solid #f7f7f7;
+  display: inline-block;
+  padding: 2rem 0.2rem 0 0.2rem;
+}
+.footer__navigation-item {
+  display: inline-block;
+}
+.footer__navigation-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer__link:link, .footer__link:visited {
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: rotate(4deg) scale(1.1);
+}
+.footer__copyright {
+  border-top: 0.1rem solid #f7f7f7;
+  color: #f7f7f7;
+  width: 90%;
+  padding: 2rem 0.1rem 0 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
