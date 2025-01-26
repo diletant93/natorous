@@ -17,6 +17,17 @@ li {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -256,6 +267,45 @@ body {
 .btn-text:active {
   transform: translateY(0.1rem);
   box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.button, .button:link, .button:visited {
+  padding: 2rem 5rem;
+  background-color: #55c57a;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #55c57a;
+  border-radius: 10rem;
+  opacity: 1;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button:hover {
+  transform: translateY(-0.7rem);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+}
+.button:hover::after {
+  opacity: 0;
+  transform: scale(1.4);
+}
+.button:focus, .button:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25);
+}
+.button:focus {
+  outline: 0.5rem solid #28b485;
+  outline-offset: 0.2rem;
 }
 
 .composition {
@@ -537,6 +587,47 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
+}
+.form__radio-group {
+  width: 49.5%;
+  display: inline-block;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 4rem;
+  position: relative;
+}
+.form__radio-button {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  border: 0.5rem solid #28b485;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+}
+.form__radio-button::after {
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  background-color: #28b485;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1;
 }
 
 .header {

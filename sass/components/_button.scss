@@ -75,3 +75,49 @@
         box-shadow: 0 .2rem 2rem rgba($color-black,.15);
     }
 }
+
+.button {
+    &,
+    &:link,
+    &:visited {
+        padding: 2rem 5rem; 
+        background-color: $color-primary;
+        border-radius: 10rem;
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        transition: all .3s;
+        z-index: 1; // Ensure button content is above the pseudo-element
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $color-primary;
+        border-radius: 10rem; // Match the button's border-radius
+        opacity: 1; // Start fully transparent
+        transition: all .3s;
+        z-index: -1; // Ensure it's behind the button content
+    }   
+    
+    &:hover {
+        transform: translateY(-.7rem);
+        box-shadow: 0 2rem 5rem rgba($color: $color-black, $alpha: .3);
+        &::after {
+            opacity: 0; // Make visible on hover
+            transform: scale(1.4);
+        }   
+    }
+    &:focus, &:active{
+        transform: translateY(-.2rem);
+        box-shadow: 0 2rem 5rem rgba($color: $color-black, $alpha: .25);
+    }
+    &:focus{
+        outline:.5rem solid $color-primary-dark;
+        outline-offset: .2rem;
+    }
+
+}
