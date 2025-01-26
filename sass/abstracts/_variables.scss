@@ -15,8 +15,15 @@ $color-grey-light-100:#f7f7f7;
 $color-white: #fff;
 $color-black:#000;
 $color-gray-dark: #777;
+$color-gray-dark-100:#999;
 $color-black-shadow: rgba(0, 0, 0, 0.15);
 
+//gradients
+$gradient-primary-light:  linear-gradient(to right bottom, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8));
+$gradient-primary: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+//border radius
+$border-radius-small: .3rem;
 
 //font
 $default-font-size: 1.6rem;
